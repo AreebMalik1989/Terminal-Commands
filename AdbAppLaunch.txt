@@ -1,0 +1,5 @@
+adb shell am start -n yourPackageName/.activityName
+
+-------------------------------------------------------------------------------
+
+adb shell monkey -p app.package.name -c android.intent.category.LAUNCHER 1
