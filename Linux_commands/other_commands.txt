@@ -1,0 +1,45 @@
+sudo
+
+Allow regular users to run programs as superuser or root.
+
+-------------------------------------------------------------------------------
+
+rm <filename>
+
+Deletes a file.
+
+-------------------------------------------------------------------------------
+
+mkdir <directoryname>
+
+Creates a new directory in the present working directory.
+
+-------------------------------------------------------------------------------
+
+mkdir <path/directory>
+
+Creates a new directory in the specified path.
+
+-------------------------------------------------------------------------------
+
+rmdir <directoryname>
+
+Deletes a directory
+
+-------------------------------------------------------------------------------
+
+man
+
+Gives help information on a command
+
+-------------------------------------------------------------------------------
+
+history
+
+Gives a list of all past commands typed in the current terminal session
+
+-------------------------------------------------------------------------------
+
+clear
+
+Clears the terminal

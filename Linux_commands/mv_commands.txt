@@ -1,0 +1,15 @@
+1. mv file "new file path"
+
+Moves the file to the new location
+
+-------------------------------------------------------------------------------
+
+2. mv filename new_file_name
+
+Renames the file to a new file name.
+
+-------------------------------------------------------------------------------
+
+3. mv <name> <new_name>
+
+Renames the directory

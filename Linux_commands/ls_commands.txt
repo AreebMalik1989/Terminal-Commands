@@ -1,0 +1,25 @@
+1. ls
+
+List all files and directories in the present working directory
+
+-------------------------------------------------------------------------------
+
+2. ls -R
+
+List files in sub-directories as well
+
+-------------------------------------------------------------------------------
+
+3. ls -a
+
+List hidden files as well
+
+-------------------------------------------------------------------------------
+
+4. ls -al
+
+List files and directories with detailed information
+
+-------------------------------------------------------------------------------
+
+
