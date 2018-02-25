@@ -1,0 +1,4 @@
+Use adb shell ls sys/class/thermal/ to get list of thermal zones and then:
+
+adb shell cat sys/class/thermal/[name of thermal zone]/temp
+For example: Adb shell cat sys/class/thermal/thermal_zone0/temp
