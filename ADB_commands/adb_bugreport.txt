@@ -1,0 +1,6 @@
+If you have just one device connected, you can get a bugreport using adb as follows:
+$ adb bugreport E:\Reports\MyBugReports
+If you do not specify a path for the bugreport, it is saved to the local directory.
+
+If you have multiple devices connected, you must specify the device with the -s option.
+$ adb -s 8XV7N15C31003476 bugreport
