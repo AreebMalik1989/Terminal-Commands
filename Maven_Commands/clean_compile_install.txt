@@ -1,1 +1,12 @@
 mvn clean compile install -DskipTests
+
+-------------------------------------
+
+mvn clean install -U
+# -U means force update of snapshot dependencies. Release dependencies can't be updated this way.
+
+-------------------------------------------------------------------------------------------------
+
+# If your local repository is somehow mucked up for release jars as opposed to snapshots (-U and --update-snapshots only update snapshots), you can purge the local repo using the following:
+
+mvn dependency:purge-local-repository clean install
