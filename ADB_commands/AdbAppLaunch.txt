@@ -1,5 +1,10 @@
+# Adb app launch time
+adb logcat | grep ActivityManager | grep Displayed
+
+-------------------------------------------------------------------------------
+# Launch activity through activity manager
 adb shell am start -n yourPackageName/.activityName
 
 -------------------------------------------------------------------------------
-
+# Launch activity through monkey
 adb shell monkey -p app.package.name -c android.intent.category.LAUNCHER 1
