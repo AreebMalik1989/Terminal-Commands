@@ -4,3 +4,11 @@ If you do not specify a path for the bugreport, it is saved to the local directo
 
 If you have multiple devices connected, you must specify the device with the -s option.
 $ adb -s 8XV7N15C31003476 bugreport
+
+----------------------------------------------------------------------------------------
+
+# To obtain a bug report from your development device running Android 7.0 and higher:
+$ adb bugreport bugreport.zip
+
+# For devices 6.0 and lower:
+$ adb bugreport > bugreport.txt
