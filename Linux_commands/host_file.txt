@@ -1,0 +1,2 @@
+show the hosts file of the system
+cat /etc/hosts
