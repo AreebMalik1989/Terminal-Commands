@@ -7,3 +7,6 @@ source venv/bin/activate
 pip install Django==1.9
 
 deactivate
+_____________________________________________________
+
+virtualenv venv --python=python2.7
