@@ -1,2 +1,5 @@
 # Freeze requirements
 pip freeze > requirements.txt
+
+# profiler
+python -m cProfile -o output_file myscript.py
