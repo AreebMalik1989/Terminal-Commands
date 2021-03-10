@@ -1,0 +1,76 @@
+# List docker images
+docker images
+docker pull image-name
+docker push
+docker rmi image-name:tag
+docker rmi image-id
+docker run hello-world
+docker run --rm -ti ubuntu sleep 5
+docker run -ti ubuntu bash -c "sleep 3; echo all done"
+
+## Run docker image interactively
+docker run -ti ubuntu:latest bash
+
+docker run -d -ti ubuntu bash
+docker attach container-name
+ditach without exiting container -> control-p control-q
+
+## List running images
+docker ps
+docker ps -a  # Shows stopped
+docker ps -l  # Shows last stopped
+
+## Create image from running container
+docker commit
+docker commit container-name my-image-name:tag
+registry.example.com:port/organization/image-name:version-tag
+organization/image-name   # Often enough
+
+## Tag image
+docker tag 2sldi340 my-image
+
+# Running more things in container
+docker exec
+docker exec -ti container-name bash
+
+#  Killing and removing containers
+docker kill container-name
+docker rm container-name
+
+# Check logs example
+docker run --name example -d ubuntu bash -c "lose /etc/password"
+docker logs example
+
+# Resource constraints
+docker run --memory maximum-allowed-memory image-name command
+docker run --cpu-shares # relative to other containers
+docker run --cpu-quota  # to limit in general
+
+# Neworking
+docker network ls
+docker network create learning
+docker run --rm -ti --net learning --name catserver ubuntu:14.04 bash
+
+docker run --rm -ti -p outside-port1:inside-port1 -p outside-port2:inside-port2 --name container-name ubuntu:14.04 bash
+docker run --rm -ti -p inside-port1 -p inside-port2 --name container-name ubuntu:14.04 bash
+docker port container-name
+
+docker run -p outside-port:inside-port/protocol(tcp/udp)
+docker run -p 1234:1234/udp
+docker run --rm -ti -p 45678/udp --name echo-server ubuntu:14.04 bash
+
+host.docker.internal
+
+# Volumes (Persistent & Ephemeral)
+docker run -ti -v /Users/areeb/example:/shared-folder ubuntu bash
+
+## Volumes-from
+docker run -ti -v /shared-data --name first ubuntu bash
+docker run -ti --volumes-from first --name second ubuntu bash
+docker run -ti --volumes-from two ubuntu bash
+
+# Registries
+docker search ubuntu
+docker login
+docker pull debian:sid
+docker push areeb/test-image1:v1.1
