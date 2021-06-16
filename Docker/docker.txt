@@ -17,8 +17,9 @@ ditach without exiting container -> control-p control-q
 
 ## List running images
 docker ps
-docker ps -a  # Shows stopped
-docker ps -l  # Shows last stopped
+docker ps -a        # Shows stopped
+docker ps -a --size # Shows size
+docker ps -l        # Shows last stopped
 
 ## Create image from running container
 docker commit
